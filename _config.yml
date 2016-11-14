@@ -1,12 +1,12 @@
-title: John Smith
-description: My Personal Blog
-author: John Smith
+title: Rails tricks
+description: Here you can find some rails tricks that I've learned
+author: Felipe Tovar
 logo: /hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/ashutosh2k12
-about: Freelance developer
+github: https://github.com/ftovaro
+about: System Engineer
 
 baseurl: "https://ftovaro.github.io"
-url: "hhttps://ftovaro.github.io"
+url: "https://ftovaro.github.io"
 
 disqus_shortname: aboutashu
 google_analytics: UA-72862926-1
