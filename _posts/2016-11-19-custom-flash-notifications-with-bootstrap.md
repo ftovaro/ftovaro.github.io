@@ -165,5 +165,3 @@ end
 
 
   Awesome!.
-
-<h2>7.Going beyond</h2>
