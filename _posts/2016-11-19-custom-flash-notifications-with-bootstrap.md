@@ -17,24 +17,23 @@ By default, Rails give us some plain flash notification. I'm gonna show you how 
 Pretty cool uh?.
 <h3>Lets begin</h3>
 
-<h2>Creating the project</h2>
+<h2>1.Creating the project</h2>
   The first thing we need is to create the project, I'm gonna upload this code to <strong>Heroku</strong> so I need
-  my database to be <strong>Postgresql</strong>, the flag `-M` is to not have mailers files and `-T` is because we don't
-  need test for this app
+  my database to be <strong>Postgresql</strong>, the flag `-M` is to not have mailers files and `-T` is because we don't need tests for this app:
 {% highlight ruby %}
 rails new custom_flash_notifications -d=postgresql -M -T
 {% endhighlight %}
-<h2>Generating all the MVC part</h2>
-  To keep this simple we are gonna create model `Person` with a name and an age, all this is gonna be
-  created with the magic of scaffold
+<h2>2.Generating all the MVC part</h2>
+  To keep this simple we are gonna create the model `Person` with a name and an age, all this is gonna be
+  created with the magic of scaffold:
 {% highlight ruby %}
 rails g scaffold Person name age
 {% endhighlight %}
-Then, create the database and do the migrations
+Then, create the database and do the migrations:
 {% highlight ruby %}
 rake db:create db:migrate
 {% endhighlight %}
-Finally, and before run the app, change the routes.
+Finally, and before running the app, change the routes:
 {% highlight ruby %}
 # routes.rb
 Rails.application.routes.draw do
@@ -42,4 +41,7 @@ Rails.application.routes.draw do
   root 'people#index'
 end
 {% endhighlight %}
-  Now lets create a the first person of the list to see the rails default notification
+  Now lets create a the first person of the list to see the rails default notification:
+  ![my alternate text](/assets/ugly-noti.png)
+  Time to do some magic.
+<h2>3.Adding Toastr to our project </h2>
