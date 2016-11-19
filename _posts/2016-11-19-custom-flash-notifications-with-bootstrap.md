@@ -2,15 +2,16 @@
 layout: post
 title:  "Custom Rails flash notification with Toastr"
 date:   2016-11-19 13:50:39
-categories: ruby, rails, bootstrap, notification, flash, toast, alerts
+categories: ruby rails bootstrap notification flash toast alerts
+comments: true
 ---
 <h1>Custom Rails flash notification with Toastr</h1>
 
-By default, Rails give us some plain flash notification. I'm gonna show you how to get from this
+By default, Rails give us some plain flash notification. I'm gonna show you how to get from this:
 
 ![my alternate text](/assets/custom_flash_notifications/ugly-noti.png)
 
-<h3>To this </h3>
+<h3>To this: </h3>
 
 ![my alternate text](/assets/custom_flash_notifications/success.png)
 
@@ -153,7 +154,7 @@ end
 ...
 {% endhighlight %}
 <h2>6.Results</h2>
-  Now, lets try what we did.
+  Now, lets try what we did.<br>
   Success:
   ![my alternate text](/assets/custom_flash_notifications/success.png)
 
@@ -167,3 +168,30 @@ end
   Awesome!.
 
 <h2>7.Going beyond</h2>
+
+
+{% if page.comments %}
+
+<div class="disqus-comments">
+  <div id="disqus_thread"></div>
+  <script>
+
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = '//rails-tricks.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>  
+{% endif %}
