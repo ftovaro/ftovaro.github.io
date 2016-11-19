@@ -165,3 +165,5 @@ end
 
 
   Awesome!.
+
+  <h3>Here is the code: <a href= "https://github.com/ftovaro/custom-flash-notifications" target="_blank">GitHub</a></h3>
