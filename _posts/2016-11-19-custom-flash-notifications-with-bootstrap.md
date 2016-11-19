@@ -8,11 +8,11 @@ categories: ruby, rails, bootstrap, notification, flash, toast, alerts
 
 By default, Rails give us some plain flash notification. I'm gonna show you how to get from this
 
-![my alternate text](/assets/test-page-image-1.jpg)
+![my alternate text](/assets/custom_flash_notifications/ugly-noti.png)
 
 <h3>To this </h3>
 
-![my alternate text](/assets/test-page-image-1.jpg)
+![my alternate text](/assets/custom_flash_notifications/success.png)
 
 Pretty cool uh?.
 <h3>Lets begin</h3>
@@ -44,7 +44,7 @@ Rails.application.routes.draw do
 end
 {% endhighlight %}
   Now lets create the first person of the list to see the rails default notification:
-  ![my alternate text](/assets/ugly-noti.png)
+  ![my alternate text](/assets/custom_flash_notifications/ugly-noti.png)
   Time to do some magic.
 <br>
 <h2>3.Adding Toastr to our project </h2>
@@ -152,5 +152,18 @@ end
 
 ...
 {% endhighlight %}
+<h2>6.Results</h2>
+  Now, lets try what we did.
+  Success:
+  ![my alternate text](/assets/custom_flash_notifications/success.png)
 
-Now, lets try what we did.
+  Info:
+  ![my alternate text](/assets/custom_flash_notifications/info.png)
+
+  Danger:
+  ![my alternate text](/assets/custom_flash_notifications/danger.png)
+
+
+  Awesome!.
+
+<h2>7.Going beyond</h2>
